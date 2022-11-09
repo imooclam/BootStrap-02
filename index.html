@@ -17,9 +17,9 @@
     <!-- Header -->
     <header >
         <!-- NavBar -->
-        <nav class="navbar  navbar-expand-md bg-dark navbar-dark position-sticky sticky-top py-1  position-relative
+        <nav class="navbar  navbar-expand-md bg-dark navbar-dark position-fixed fixed-top top-1  
         ">
-            <aticle class="container ">
+            <aticle class="container pb-1  ">
 
                 <a href="#" class=" navbar-brand">Frontend Bootcamp
                 </a>
@@ -31,13 +31,13 @@
             <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 ">
                 <li class="navbar-item me-2">
                     <a class="nav-link text-capitalize"
-                    href="#">what you'll learn</a> </li>
+                    href="#learn">what you'll learn</a> </li>
                     <li class="navbar-item me-2">
                         <a class="nav-link text-capitalize"
                         href="#questions">questions</a> </li>
                         <li class="navbar-item me-2">
                             <a class="nav-link text-capitalize"
-                            href="#instructors">instructors</a> </li>
+                            href="#Instructors">instructors</a> </li>
                             
                             
                         </ul>
@@ -224,7 +224,7 @@
     </article>
 </article>
 <!-- start question and accodion -->
-<article class="question py-5">
+<article id="questions" class="question py-5">
     <article class="container-md">
         <section class="title text-center">
             <p class="display-6 fw-normal">Frequently Asked Questions
@@ -306,7 +306,7 @@
 
 <!-- Our Instructors -->
 
-<article class="our-instructor py-5 bg-primary text-light">
+<article id="Instructors" class="our-instructor py-5 bg-primary text-light">
     <article class="container">
         <section class="title text-center">
             <p class="display-5 fw-normal">Our Instructors
@@ -553,12 +553,11 @@ ScrollReveal().reveal('.write'
 ScrollReveal().reveal('.card'
 ,{
     
-    origin      : 'left',
-    delay    : 200,
+    origin      : 'top',
+    delay    : 100,
   distance : '10px',
   easing   : 'cubic-bezier( 0.1, 0.2, .2, 1 )',
   rotate   : { z: 0,x:10 },
-  scale    : 1.3
 }
 );
 
